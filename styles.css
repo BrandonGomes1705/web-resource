@@ -12,8 +12,8 @@ body {
 }
 
 .nav-section {
-  background-color: #5f0f40;
-  padding: 3em;
+  background-color: #175ad6;
+  padding: 3em 2em;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -31,8 +31,23 @@ nav {
 nav > * {
   padding: 1rem 0;
 }
-
+.nav-search input {
+  border: none;
+  box-shadow: black;
+  border-radius: 2px;
+  padding: 0.7em;
+}
+.nav-links ul li a {
+  text-decoration: none;
+}
 .nav-links ul li a p {
-  text-align: center;
-  margin: 2em;
+  text-align: left;
+  margin: 2em 0;
+  padding: 0.6em;
+  color: azure;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 5px;
+}
+.nav-links ul li a p:hover {
+  background-color: #09388f;
 }
