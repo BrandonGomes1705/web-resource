@@ -6,14 +6,14 @@
 
 body {
   height: 100vh;
-  background-color: #0f4c5c;
+  background-color: rgb(241, 233, 233);
   display: grid;
-  grid-template-columns: 25%;
+  grid-template-columns: 25% 75%;
 }
 
 .nav-section {
   background-color: #175ad6;
-  padding: 3em 2em;
+  padding: 3em 1em;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -21,17 +21,27 @@ body {
 .nav-section nav ul {
   list-style-type: none;
 }
+nav li {
+  display: flex;
+  width: 100%;
+}
+nav li svg {
+  max-width: 2em;
+  height: auto;
+}
 
 nav {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  width: 100%;
 }
 
 nav > * {
   padding: 1rem 0;
 }
 .nav-search input {
+  width: 100%;
   border: none;
   box-shadow: black;
   border-radius: 2px;
@@ -50,4 +60,67 @@ nav > * {
 }
 .nav-links ul li a p:hover {
   background-color: #09388f;
+}
+@media only screen and (max-width: 650px) {
+  body {
+    display: flex;
+  }
+  .nav-section {
+    display: none;
+  }
+}
+
+.mainPage {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.contentSection {
+  width: 90%;
+  height: fit-content;
+  background-color: rgb(206, 204, 204);
+  padding: 2em;
+  border-radius: 15px;
+  margin-top: 4em;
+}
+.contentSection h3 {
+  padding-bottom: 0.7em;
+}
+
+.articles {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid black;
+  padding: 0.5em;
+  margin: 0.2em;
+  margin-left: 0;
+}
+
+.articles div {
+  text-align: center;
+}
+
+.tags {
+  display: flex;
+}
+
+.tags > * {
+  padding: 0.2em;
+  margin: 0.3em;
+}
+
+.video {
+  background-color: rgb(43, 126, 27);
+  border-radius: 5px;
+  padding: 0.3em;
+}
+.animation {
+  background-color: rgb(103, 27, 126);
+  border-radius: 5px;
+  padding: 0.3em;
 }
